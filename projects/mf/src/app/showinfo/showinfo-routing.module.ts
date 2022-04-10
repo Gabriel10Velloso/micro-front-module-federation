@@ -1,17 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DefaultComponent } from '../default/default.component';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: DefaultComponent,
-  },
-  {
-    path: 'mf',
-    loadChildren: () => import('./showinfo.module').then(m => m.ShowinfoModule)
-  }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
